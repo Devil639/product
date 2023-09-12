@@ -1,35 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Stylish Hover and Effect Button</title>
-    <style>
-        /* Button style */
-        .styled-button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #007bff; /* Default button color */
-            color: #fff; /* Text color */
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-
-        /* Button hover effect */
-        .styled-button:hover {
-            background-color: #0056b3; /* New button color on hover */
-        }
-
-        /* Button click effect */
-        .styled-button:active {
-            transform: scale(0.95); /* Slightly reduce size on click */
-        }
-    </style>
+    <title>Register</title>
 </head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    max-width: 300px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+</style>
 <body>
-    <form method="post"action="index.php">
-    <button class="styled-button"> Click Me</button>
-</form>
+    <h2>Register</h2>
+    <form action="register.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" name="password" required><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
 </body>
 </html>
