@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stylish Hover and Effect Button</title>
+    <style>
+        /* Button style */
+        .styled-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff; /* Default button color */
+            color: #fff; /* Text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        /* Button hover effect */
+        .styled-button:hover {
+            background-color: #0056b3; /* New button color on hover */
+        }
+
+        /* Button click effect */
+        .styled-button:active {
+            transform: scale(0.95); /* Slightly reduce size on click */
+        }
+    </style>
+</head>
+<body>
+    <form method="post"action="index.php">
+    <button class="styled-button"> Click Me</button>
+</form>
+</body>
+</html>
